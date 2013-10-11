@@ -112,13 +112,13 @@
 	
 	<!-- 3rd-party Plugins: https://build.phonegap.com/plugins/all -->
 
+	<gap:plugin name="com.phonegap.plugins.hydration" version="1.2.1" />
+
 	<!-- Android, iOS: https://github.com/phonegap-build/BarcodeScanner -->
 	<gap:plugin name="com.phonegap.plugins.barcodescanner" version="1.0.2" />
 
 	<!-- Android, iOS: https://github.com/phonegap-build/PushPlugin -->
-<!--
-	<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.0.1" />
--->
+	<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.0.3" />
 
 	<!-- Android, iOS: https://github.com/ohh2ahh/AppAvailability -->
 <!--
