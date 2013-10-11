@@ -1,0 +1,181 @@
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml, https://github.com/phonegap/phonegap-start/blob/master/www/config.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+				xmlns:gap="http://phonegap.com/ns/1.0"
+				id="devstonez.analytics"
+				versionCode="1"
+				version="0.0.1">
+
+	<!-- ==================================================== -->
+	<!-- Application info                                     -->
+	<!-- ==================================================== -->
+	<name>Analytics</name>                                         
+	<description>Devstonez Test: Analytics</description>
+	<author href="http://dev.stonez.info" email="dev.stonez@gmail.com">Dev{eloper} Stonez</author>
+
+	<!-- ==================================================== -->
+	<!-- Features, permissions                                -->
+	<!-- ==================================================== -->
+	<feature name="http://api.phonegap.com/1.0/battery"/>
+	<feature name="http://api.phonegap.com/1.0/camera"/>
+	<feature name="http://api.phonegap.com/1.0/contacts"/>
+	<feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/media"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/notification"/>
+
+	<!-- ==================================================== -->
+	<!-- Preferences                                          -->
+	<!-- ==================================================== -->
+
+	<!-- multi-plat preferences -->
+	<preference name="phonegap-version" value="3.0.0" />
+	<preference name="permissions" value="none"/>
+	<preference name="orientation" value="default" />
+	<preference name="fullscreen"	value="true" />
+
+	<!-- iOS preferences -->
+	<preference name="target-device" value="universal" />
+	<preference name="prerendered-icon" value="true" />
+	<preference name="detect-data-types" value="false" />
+	<preference name="webviewbounce" value="false" />
+	<preference name="stay-in-webview" value="false" />
+	<preference name="exit-on-suspend" value="true" />
+
+	<!-- Android preferences -->
+	<preference name="android-minSdkVersion" value="8" />
+	<preference name="android-installLocation" value="auto" />
+	<preference name="android-windowSoftInputMode" value="adjustResize" />
+
+	<!-- ==================================================== -->
+	<!-- PhoneGap Build target platforms                     -->
+	<!-- ==================================================== -->
+
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+
+	<!-- ==================================================== -->
+	<!-- Plugins                                              -->
+	<!-- ==================================================== -->
+	
+	<!-- Cordova Core Plugins: https://build.phonegap.com/plugins/core -->
+	<!-- ???? -->
+	<gap:plugin name="org.apache.cordova.core.console" version="0.2.0" />
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_device_device.md.html#Device -->
+	<gap:plugin name="org.apache.cordova.core.device" version="0.2.1" />
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_events_events.md.html#Events -->
+	<gap:plugin name="org.apache.cordova.core.battery-status" version="0.2.1" /> 
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_camera_camera.md.html#Camera -->
+	<gap:plugin name="org.apache.cordova.core.camera" version="0.2.1" />
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_inappbrowser_inappbrowser.md.html#InAppBrowser -->
+	<gap:plugin name="org.apache.cordova.core.inappbrowser" version="0.2.0" /> 
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_accelerometer_accelerometer.md.html#Accelerometer -->
+	<gap:plugin name="org.apache.cordova.core.device-motion" version="0.2.0" />
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_compass_compass.md.html#Compass -->
+	<gap:plugin name="org.apache.cordova.core.device-orientation" version="0.3.0" />
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_media_capture_capture.md.html#Capture -->
+	<gap:plugin name="org.apache.cordova.core.media-capture" version="0.2.0" />
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_file_file.md.html#File -->
+	<gap:plugin name="org.apache.cordova.core.file" version="0.2.1" />
+	<gap:plugin name="org.apache.cordova.core.file-transfer" version="0.2.0" />
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_geolocation_geolocation.md.html#Geolocation -->
+	<gap:plugin name="org.apache.cordova.core.geolocation" version="0.3.0" />
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_globalization_globalization.md.html#Globalization -->
+	<gap:plugin name="org.apache.cordova.core.globalization" version="0.2.0" />
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_connection_connection.md.html#Connection -->
+	<gap:plugin name="org.apache.cordova.core.network-information" version="0.2.1" />
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_media_media.md.html#Media -->
+	<gap:plugin name="org.apache.cordova.core.audiohandler" version="0.2.1" />
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_notification_notification.md.html#Notification -->
+	<gap:plugin name="org.apache.cordova.core.vibration" version="0.3.0" />
+	<gap:plugin name="org.apache.cordova.core.dialogs" version="0.2.0" />
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_splashscreen_splashscreen.md.html#Splashscreen -->
+	<gap:plugin name="org.apache.cordova.core.splashscreen" version="0.2.0" />
+
+	<!-- http://cordova.apache.org/docs/en/3.0.0/cordova_contacts_contacts.md.html#Contacts -->
+	<gap:plugin name="org.apache.cordova.core.contacts" version="0.2.1" />
+	
+	<!-- 3rd-party Plugins: https://build.phonegap.com/plugins/all -->
+
+	<!-- Android, iOS: https://github.com/phonegap-build/BarcodeScanner -->
+	<gap:plugin name="com.phonegap.plugins.barcodescanner" version="1.0.2" />
+
+	<!-- Android, iOS: https://github.com/phonegap-build/PushPlugin -->
+	<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.0.1" />
+
+	<!-- Android, iOS: https://github.com/ohh2ahh/AppAvailability -->
+<!--
+	<gap:plugin name="com.ohh2ahh.plugins.appavailability" />
+-->
+
+	<!-- Android, WP8: https://github.com/chariotsolutions/phonegap-nfc -->
+<!--
+	<gap:plugin name="com.chariotsolutions.nfc.plugin" />
+-->
+
+	<!-- Android: https://github.com/phonegap-build/FastCanvas -->
+<!--
+	<gap:plugin name="com.adobe.plugins.fastcanvas" />
+-->
+
+	<!-- Android, iOS: https://github.com/don/BluetoothSerial -->
+<!--
+	<gap:plugin name="com.megster.cordova.bluetoothserial" />
+-->
+
+	<!-- iOS: https://github.com/simplec-dev/LocalNotification -->
+<!--
+	<gap:plugin name="com.simplec.plugins.localnotification" />
+-->
+
+	<!-- Android: https://github.com/acen99/WebIntent -->
+<!--
+	<gap:plugin name="com.borismus.webintent" />
+-->
+
+	<!-- Android, iOS: https://github.com/jcjee/email-composer -->
+<!--
+	<gap:plugin name="com.phonegap.plugins.emailcomposer" />
+-->
+
+	<!-- Android, iOS: https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin -->
+<!--
+	<gap:plugin name="nl.x-services.plugins.socialsharing" />
+-->
+
+	<!-- Android: https://github.com/wwwhhmm/update-plugin -->
+<!--
+	<gap:plugin name="org.common.plugins.updateapp" />
+-->
+
+	<!-- Android, iOS: https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin -->
+<!--
+	<gap:plugin name="nl.x-services.plugins.calendar" />
+-->
+
+	<!-- Android, iOS: https://github.com/EddyVerbruggen/SSLCertificateChecker-PhoneGap-Plugin -->
+<!--
+	<gap:plugin name="nl.x-services.plugins.sslcertificatechecker" />
+-->
+	
+	<!-- ==================================================== -->
+	<!-- Allow access to all external resources               -->
+	<!-- ==================================================== -->
+	<access origin="*" /> 
+
+</widget>
