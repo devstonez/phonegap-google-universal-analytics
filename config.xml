@@ -116,7 +116,9 @@
 	<gap:plugin name="com.phonegap.plugins.barcodescanner" version="1.0.2" />
 
 	<!-- Android, iOS: https://github.com/phonegap-build/PushPlugin -->
+<!--
 	<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.0.1" />
+-->
 
 	<!-- Android, iOS: https://github.com/ohh2ahh/AppAvailability -->
 <!--
